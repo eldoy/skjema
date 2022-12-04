@@ -11,5 +11,8 @@
     "url": "https://github.com/eldoy/skjema"
   },
   "author": "Vidar Eldøy <vidar@eldoy.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "furu": "^0.1.20"
+  }
 }
