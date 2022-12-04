@@ -10,6 +10,8 @@ Generate your entire content admin from YAML files.
 npm i -g skjema
 ```
 
+### Usage
+
 Then use like this from your application directory:
 ```
 # Start development server
@@ -20,13 +22,6 @@ skjema build
 
 # Deploy application
 skjema deploy
-```
-
-### Development
-
-Start the development server like this:
-```
-skjema dev
 ```
 
 MIT Licensed. Enjoy!
