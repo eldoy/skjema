@@ -1,5 +1,8 @@
 const furu = require('furu')
+const { load } = require('conficurse')
 const layout = require('./app/layouts/main.js')
+const schema = load('schema')
+const config = load('config')
 
 // TODO: Generate routes from models
 // const routes = {
