@@ -1,0 +1,10 @@
+fields:
+  project_id:
+    required: true
+    is: id
+  todo_id:
+    required: true
+    is: id
+  description:
+    required: true
+    is: string

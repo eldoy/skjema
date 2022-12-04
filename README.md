@@ -17,6 +17,9 @@ skjema dev
 
 # Build your application
 skjema build
+
+# Deploy application
+skjema deploy
 ```
 
 ### Development
