@@ -1,27 +1,31 @@
 # Skjema
 
-Low code CMS System.
+Generate forms and actions.
 
-Generate your entire content admin from YAML files.
+Made for the [Waveorb Web Application Development Framework](https://waveorb.com)
 
 ### Install
 
 ```
-npm i -g skjema
+npm i skjema
 ```
 
 ### Usage
 
-Then use like this from your application directory:
-```
-# Start development server
-skjema dev
+```js
+const skjema = require('skjema')
 
-# Build your application
-skjema build
+// Generate form
+skjema.form()
 
-# Deploy application
-skjema deploy
+// Generate form field
+skjema.field()
+
+//
+
+
+
+
 ```
 
 MIT Licensed. Enjoy!

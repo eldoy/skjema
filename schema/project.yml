@@ -1,4 +1,0 @@
-fields:
-  name:
-    required: true
-    is: string

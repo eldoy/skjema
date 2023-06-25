@@ -1,0 +1,12 @@
+image:
+  type: image
+  config:
+    sizes:
+      thumb: 50x50
+      medium: 100x100
+      large: 200x200
+      original:
+name:
+  type: string
+email:
+  type: email

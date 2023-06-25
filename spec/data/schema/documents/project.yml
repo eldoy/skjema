@@ -1,0 +1,33 @@
+name: project
+desc: the projects on your site
+fields:
+  image:
+    type: file
+  name:
+    type: string
+  title:
+    type: radio
+    options:
+      - suong
+      - pham
+      - bobby
+  desc:
+    type: text
+  tags:
+    type: checkbox
+    options:
+      - juice
+      - meat
+      - milk
+  category:
+    type: radio
+    options:
+      - sun
+      - moon
+      - sea
+  location:
+    type: select
+    options:
+      - spain
+      - norway
+      - germany

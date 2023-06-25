@@ -1,25 +1,21 @@
-const furu = require('furu')
-const { load } = require('conficurse')
-const layout = require('./app/layouts/main.js')
-const schema = load('schema')
-const config = load('config')
+var loader = require('conficurse')
+module.exports = loader.load('lib')
 
-// TODO: Generate routes from models
-// const routes = {
-//   'get#': homePage,
-//   'get#about': aboutPage
+// module.exports = {
+//   model: require('./lib/model.js'),
+//   form: require('./lib/form.js'),
+//   fields: {
+//     checkbox: require('./lib/fields/checkbox.js'),
+//     file: require('./lib/fields/file.js'),
+//     radio: require('./lib/fields/radio.js'),
+//     select: require('./lib/fields/select.js'),
+//     string: require('./lib/fields/string.js'),
+//     text: require('./lib/fields/text.js')
+//   },
+//   scripts: {
+//     handleDelete: require('./lib/scripts/handleDelete.js'),
+//     handleSave: require('./lib/scripts/handleSave.js'),
+//     handleUpload: require('./lib/scripts/handleUpload.js'),
+//     renderUploadImage: require('./lib/scripts/renderUploadImage.js')
+//   }
 // }
-
-const routes = {}
-
-async function handleRequest(req, res) {
-  console.log(req.route)
-  if (req.route) {
-    const html = await req.route(req, res)
-    return layout(html)
-  }
-}
-
-const options = { port: 9095, assets: 'app/assets', routes }
-
-furu(options, handleRequest)

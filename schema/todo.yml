@@ -1,7 +1,0 @@
-fields:
-  project_id:
-    required: true
-    is: id
-  title:
-    required: true
-    is: string

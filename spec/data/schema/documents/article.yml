@@ -1,0 +1,14 @@
+name: article
+desc: the articles in your news feed
+fields:
+  image:
+    type: file
+  author:
+    type: select
+    options:
+      - suong
+      - vidar
+  title:
+    type: string
+  content:
+    type: text
