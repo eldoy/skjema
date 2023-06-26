@@ -17,7 +17,11 @@ module.exports = {
     radio: require('./lib/fields/radio.js'),
     select: require('./lib/fields/select.js'),
     string: require('./lib/fields/string.js'),
-    text: require('./lib/fields/text.js')
+    text: require('./lib/fields/text.js'),
+    password: require('./lib/fields/password.js'),
+    email: require('./lib/fields/email.js'),
+    date: require('./lib/fields/date.js'),
+    color: require('./lib/fields/color.js')
   },
   scripts: {
     handleDelete: require('./lib/scripts/handleDelete.js'),

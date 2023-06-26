@@ -27,3 +27,23 @@ it('should have a text field', async function ({ t, skjema, models }) {
   var result = skjema.fields.text({}, models.article)
   t.ok(typeof result == 'string')
 })
+
+it('should have a password field', async function ({ t, skjema, models }) {
+  var result = skjema.fields.password({}, models.article)
+  t.ok(typeof result == 'string')
+})
+
+it('should have a email field', async function ({ t, skjema, models }) {
+  var result = skjema.fields.email({}, models.article)
+  t.ok(typeof result == 'string')
+})
+
+it('should have a date field', async function ({ t, skjema, models }) {
+  var result = skjema.fields.date({}, models.article)
+  t.ok(typeof result == 'string')
+})
+
+it('should have a color field', async function ({ t, skjema, models }) {
+  var result = skjema.fields.color({}, models.article)
+  t.ok(typeof result == 'string')
+})
