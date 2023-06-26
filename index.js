@@ -1,5 +1,6 @@
 var loader = require('conficurse')
-module.exports = loader.load('lib')
+
+module.exports = loader.load('./lib')
 
 // module.exports = {
 //   model: require('./lib/model.js'),
