@@ -1,6 +1,6 @@
 {
   "name": "skjema",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Low code CMS System",
   "main": "index.js",
   "scripts": {
