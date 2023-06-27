@@ -21,7 +21,8 @@ module.exports = {
     password: require('./lib/fields/password.js'),
     email: require('./lib/fields/email.js'),
     date: require('./lib/fields/date.js'),
-    color: require('./lib/fields/color.js')
+    color: require('./lib/fields/color.js'),
+    submit: require('./lib/fields/submit.js')
   },
   scripts: {
     handleDelete: require('./lib/scripts/handleDelete.js'),
