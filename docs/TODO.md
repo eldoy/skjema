@@ -17,3 +17,5 @@
 
 - [ ] Haka, d8a and waveorb interoperatibility
   - data-default and data-type for all validations in d8a
+
+- [ ] data-default for all edit forms
