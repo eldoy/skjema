@@ -1,0 +1,51 @@
+name: all
+desc: Using all of the fields
+fields:
+  title:
+    required: true
+    type: string
+  email:
+    required: true
+    type: email
+  password:
+    required: true
+    type: password
+  amount:
+    required: true
+    type: number
+  accept:
+    required: true
+    type: bool
+  content:
+    required: true
+    type: text
+  image:
+    required: true
+    type: file
+  created:
+    required: true
+    type: date
+  background:
+    required: true
+    type: color
+  tags:
+    required: true
+    type: checkbox
+    options:
+      - juice
+      - meat
+      - milk
+  category:
+    required: true
+    type: radio
+    options:
+      - sun
+      - moon
+      - sea
+  location:
+    required: true
+    type: select
+    options:
+      - spain
+      - norway
+      - germany
