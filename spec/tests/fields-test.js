@@ -19,7 +19,7 @@ it('should have a select field', async function ({ t, skjema, models }) {
 })
 
 it('should have a string field', async function ({ t, skjema, models }) {
-  var result = skjema.string({}, models.all.fields.string)
+  var result = skjema.text({}, models.all.fields.text)
   t.ok(typeof result == 'string')
 })
 

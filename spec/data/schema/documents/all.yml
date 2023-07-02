@@ -1,9 +1,9 @@
 name: all
 desc: Using all of the fields
 fields:
-  string:
+  text:
     required: true
-    type: string
+    type: text
   email:
     required: true
     type: email

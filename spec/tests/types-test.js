@@ -1,5 +1,5 @@
 it('should find types for fields', async function ({ t, skjema, models }) {
-  let result = skjema.types(models.all.fields.string)
+  let result = skjema.types(models.all.fields.text)
   t.equal(result, '')
 
   result = skjema.types(models.all.fields.email)

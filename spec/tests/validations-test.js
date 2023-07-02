@@ -5,8 +5,8 @@ it('should make validations for create', async function ({
 }) {
   let validations = skjema.validations(models.all, 'create')
 
-  t.equal(validations.string.required, true)
-  t.equal(validations.string.is, 'string')
+  t.equal(validations.text.required, true)
+  t.equal(validations.text.is, 'string')
 
   t.equal(validations.email.required, true)
   t.equal(validations.email.is, 'email')
@@ -52,8 +52,8 @@ it('should make validations for create', async function ({
 }) {
   let validations = skjema.validations(models.all, 'update')
 
-  t.equal(validations.string.required, undefined)
-  t.equal(validations.string.is, 'string')
+  t.equal(validations.text.required, undefined)
+  t.equal(validations.text.is, 'string')
 
   t.equal(validations.email.required, undefined)
   t.equal(validations.email.is, 'email')

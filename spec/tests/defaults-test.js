@@ -1,5 +1,5 @@
 it('should find defaults for fields', async function ({ t, skjema, models }) {
-  let result = skjema.defaults(models.all.fields.string)
+  let result = skjema.defaults(models.all.fields.text)
   t.equal(result, '')
 
   result = skjema.defaults(models.all.fields.email)
