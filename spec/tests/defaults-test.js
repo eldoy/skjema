@@ -24,7 +24,7 @@ it('should find defaults for fields', async function ({ t, skjema, models }) {
   t.equal(result, '')
 
   result = skjema.defaults(models.all.fields.color)
-  t.equal(result, '')
+  t.equal(result, '#000000')
 
   result = skjema.defaults(models.all.fields.checkbox)
   t.equal(result, '[]')
