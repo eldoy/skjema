@@ -1,4 +1,3 @@
-- title on all fields (label, legend)
 - title for options on select, checkbox, radio
 
 
