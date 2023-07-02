@@ -11,4 +11,4 @@ fields:
   title:
     type: string
   content:
-    type: text
+    type: textarea

@@ -12,7 +12,7 @@ fields:
       - pham
       - bobby
   desc:
-    type: text
+    type: textarea
   tags:
     type: checkbox
     options:

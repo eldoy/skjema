@@ -28,8 +28,8 @@ it('should have a hidden field', async function ({ t, skjema, models }) {
   t.ok(typeof result == 'string')
 })
 
-it('should have a text field', async function ({ t, skjema, models }) {
-  var result = skjema.text({}, models.all.fields.text)
+it('should have a textarea field', async function ({ t, skjema, models }) {
+  var result = skjema.textarea({}, models.all.fields.textarea)
   t.ok(typeof result == 'string')
 })
 

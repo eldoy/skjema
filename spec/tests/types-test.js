@@ -14,7 +14,7 @@ it('should find types for fields', async function ({ t, skjema, models }) {
   result = skjema.types(models.all.fields.bool)
   t.equal(result, 'bool')
 
-  result = skjema.types(models.all.fields.text)
+  result = skjema.types(models.all.fields.textarea)
   t.equal(result, '')
 
   result = skjema.types(models.all.fields.file)

@@ -20,8 +20,8 @@ it('should make validations for create', async function ({
   t.equal(validations.bool.required, true)
   t.equal(validations.bool.is, 'boolean')
 
-  t.equal(validations.text.required, true)
-  t.equal(validations.text.is, 'string')
+  t.equal(validations.textarea.required, true)
+  t.equal(validations.textarea.is, 'string')
 
   t.equal(validations.file.required, true)
   t.equal(validations.file.is, 'url')
@@ -67,8 +67,8 @@ it('should make validations for create', async function ({
   t.equal(validations.bool.required, undefined)
   t.equal(validations.bool.is, 'boolean')
 
-  t.equal(validations.text.required, undefined)
-  t.equal(validations.text.is, 'string')
+  t.equal(validations.textarea.required, undefined)
+  t.equal(validations.textarea.is, 'string')
 
   t.equal(validations.file.required, undefined)
   t.equal(validations.file.is, 'url')

@@ -14,7 +14,7 @@ it('should find defaults for fields', async function ({ t, skjema, models }) {
   result = skjema.defaults(models.all.fields.bool)
   t.equal(result, 'false')
 
-  result = skjema.defaults(models.all.fields.text)
+  result = skjema.defaults(models.all.fields.textarea)
   t.equal(result, '')
 
   result = skjema.defaults(models.all.fields.file)
