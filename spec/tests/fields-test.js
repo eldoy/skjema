@@ -23,6 +23,11 @@ it('should have a string field', async function ({ t, skjema, models }) {
   t.ok(typeof result == 'string')
 })
 
+it('should have a hidden field', async function ({ t, skjema, models }) {
+  var result = skjema.hidden({}, models.all.fields.hidden)
+  t.ok(typeof result == 'string')
+})
+
 it('should have a text field', async function ({ t, skjema, models }) {
   var result = skjema.text({}, models.all.fields.text)
   t.ok(typeof result == 'string')

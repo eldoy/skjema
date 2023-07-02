@@ -49,3 +49,6 @@ fields:
       - spain
       - norway
       - germany
+  hidden:
+    required: true
+    type: hidden

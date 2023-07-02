@@ -1,0 +1,3 @@
+- [ ] clearErrors
+- [ ] onclick clearErrors for file
+- [ ] reset to upload file twice
