@@ -1,3 +1,10 @@
+- title on all fields (label, legend)
+- title for options on select, checkbox, radio
+
+
+
+
+
 - [ ] Search action fields
 - [ ] Support value and text for options
   - select
