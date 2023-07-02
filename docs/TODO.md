@@ -1,5 +1,5 @@
 - [ ] Support multiple select
-  - multiple: true
+  - multiple: true or type select-multiple (like haka)
   - validations: is: 'array'
   - does d8a support: in for arrays (all values must be in) ?
 
@@ -8,4 +8,3 @@
 - [ ] add is: 'color' to d8a?
 
 - [ ] delete and update actions needs id
-  - get also?
