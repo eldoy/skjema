@@ -1,7 +1,7 @@
 name: all
 desc: Using all of the fields
 fields:
-  title:
+  string:
     required: true
     type: string
   email:
@@ -10,39 +10,39 @@ fields:
   password:
     required: true
     type: password
-  amount:
+  number:
     required: true
     type: number
-  accept:
+  bool:
     required: true
     type: bool
-  content:
+  text:
     required: true
     type: text
-  image:
+  file:
     required: true
     type: file
-  created:
+  date:
     required: true
     type: date
-  background:
+  color:
     required: true
     type: color
-  tags:
+  checkbox:
     required: true
     type: checkbox
     options:
       - juice
       - meat
       - milk
-  category:
+  radio:
     required: true
     type: radio
     options:
       - sun
       - moon
       - sea
-  location:
+  select:
     required: true
     type: select
     options:

@@ -5,8 +5,8 @@ it('should make validations for create', async function ({
 }) {
   let validations = skjema.validations(models.all, 'create')
 
-  t.equal(validations.title.required, true)
-  t.equal(validations.title.is, 'string')
+  t.equal(validations.string.required, true)
+  t.equal(validations.string.is, 'string')
 
   t.equal(validations.email.required, true)
   t.equal(validations.email.is, 'email')
@@ -14,46 +14,46 @@ it('should make validations for create', async function ({
   t.equal(validations.password.required, true)
   t.equal(validations.password.is, 'string')
 
-  t.equal(validations.amount.required, true)
-  t.equal(validations.amount.is, 'number')
+  t.equal(validations.number.required, true)
+  t.equal(validations.number.is, 'number')
 
-  t.equal(validations.accept.required, true)
-  t.equal(validations.accept.is, 'boolean')
+  t.equal(validations.bool.required, true)
+  t.equal(validations.bool.is, 'boolean')
 
-  t.equal(validations.content.required, true)
-  t.equal(validations.content.is, 'string')
+  t.equal(validations.text.required, true)
+  t.equal(validations.text.is, 'string')
 
-  t.equal(validations.image.required, true)
-  t.equal(validations.image.is, 'url')
+  t.equal(validations.file.required, true)
+  t.equal(validations.file.is, 'url')
 
-  t.equal(validations.created.required, true)
-  t.equal(validations.created.is, 'date')
+  t.equal(validations.date.required, true)
+  t.equal(validations.date.is, 'date')
 
-  t.equal(validations.background.required, true)
-  t.equal(validations.background.is, 'color')
+  t.equal(validations.color.required, true)
+  t.equal(validations.color.is, 'color')
 
-  t.equal(validations.tags.required, true)
-  t.equal(validations.tags.is, 'array')
-  t.deepEqual(validations.tags.in, ['juice', 'meat', 'milk'])
+  t.equal(validations.checkbox.required, true)
+  t.equal(validations.checkbox.is, 'array')
+  t.deepEqual(validations.checkbox.in, ['juice', 'meat', 'milk'])
 
-  t.equal(validations.category.required, true)
-  t.equal(validations.category.is, 'string')
-  t.deepEqual(validations.category.in, ['sun', 'moon', 'sea'])
+  t.equal(validations.radio.required, true)
+  t.equal(validations.radio.is, 'string')
+  t.deepEqual(validations.radio.in, ['sun', 'moon', 'sea'])
 
-  t.equal(validations.location.required, true)
-  t.equal(validations.location.is, 'string')
-  t.deepEqual(validations.location.in, ['spain', 'norway', 'germany'])
+  t.equal(validations.select.required, true)
+  t.equal(validations.select.is, 'string')
+  t.deepEqual(validations.select.in, ['spain', 'norway', 'germany'])
 })
 
-it('should make validations for update', async function ({
+it('should make validations for create', async function ({
   t,
   skjema,
   models
 }) {
   let validations = skjema.validations(models.all, 'update')
 
-  t.equal(validations.title.required, undefined)
-  t.equal(validations.title.is, 'string')
+  t.equal(validations.string.required, undefined)
+  t.equal(validations.string.is, 'string')
 
   t.equal(validations.email.required, undefined)
   t.equal(validations.email.is, 'email')
@@ -61,33 +61,33 @@ it('should make validations for update', async function ({
   t.equal(validations.password.required, undefined)
   t.equal(validations.password.is, 'string')
 
-  t.equal(validations.amount.required, undefined)
-  t.equal(validations.amount.is, 'number')
+  t.equal(validations.number.required, undefined)
+  t.equal(validations.number.is, 'number')
 
-  t.equal(validations.accept.required, undefined)
-  t.equal(validations.accept.is, 'boolean')
+  t.equal(validations.bool.required, undefined)
+  t.equal(validations.bool.is, 'boolean')
 
-  t.equal(validations.content.required, undefined)
-  t.equal(validations.content.is, 'string')
+  t.equal(validations.text.required, undefined)
+  t.equal(validations.text.is, 'string')
 
-  t.equal(validations.image.required, undefined)
-  t.equal(validations.image.is, 'url')
+  t.equal(validations.file.required, undefined)
+  t.equal(validations.file.is, 'url')
 
-  t.equal(validations.created.required, undefined)
-  t.equal(validations.created.is, 'date')
+  t.equal(validations.date.required, undefined)
+  t.equal(validations.date.is, 'date')
 
-  t.equal(validations.background.required, undefined)
-  t.equal(validations.background.is, 'color')
+  t.equal(validations.color.required, undefined)
+  t.equal(validations.color.is, 'color')
 
-  t.equal(validations.tags.required, undefined)
-  t.equal(validations.tags.is, 'array')
-  t.deepEqual(validations.tags.in, ['juice', 'meat', 'milk'])
+  t.equal(validations.checkbox.required, undefined)
+  t.equal(validations.checkbox.is, 'array')
+  t.deepEqual(validations.checkbox.in, ['juice', 'meat', 'milk'])
 
-  t.equal(validations.category.required, undefined)
-  t.equal(validations.category.is, 'string')
-  t.deepEqual(validations.category.in, ['sun', 'moon', 'sea'])
+  t.equal(validations.radio.required, undefined)
+  t.equal(validations.radio.is, 'string')
+  t.deepEqual(validations.radio.in, ['sun', 'moon', 'sea'])
 
-  t.equal(validations.location.required, undefined)
-  t.equal(validations.location.is, 'string')
-  t.deepEqual(validations.location.in, ['spain', 'norway', 'germany'])
+  t.equal(validations.select.required, undefined)
+  t.equal(validations.select.is, 'string')
+  t.deepEqual(validations.select.in, ['spain', 'norway', 'germany'])
 })

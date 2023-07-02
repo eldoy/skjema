@@ -19,3 +19,6 @@
   - data-default and data-type for all validations in d8a
 
 - [ ] data-default for all edit forms
+
+- [ ] delete and update actions needs id
+  - get also?
