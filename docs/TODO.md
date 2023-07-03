@@ -1,1 +1,5 @@
+- [ ] textarea, select, radio, checkbox clearerrors
+- [ ] don't use id for upload preview
+- [ ] postfix all ids with -field
 - [ ] reset to upload file twice
+- [ ] Upload action should be /item/upload, not /upload/create
