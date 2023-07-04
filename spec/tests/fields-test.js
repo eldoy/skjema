@@ -18,8 +18,18 @@ it('should have a select field', async function ({ t, skjema, models }) {
   t.ok(typeof result == 'string')
 })
 
-it('should have a string field', async function ({ t, skjema, models }) {
+it('should have a text field', async function ({ t, skjema, models }) {
   var result = skjema.text({}, models.all.fields.text)
+  t.ok(typeof result == 'string')
+})
+
+it('should have a number field', async function ({ t, skjema, models }) {
+  var result = skjema.number({}, models.all.fields.number)
+  t.ok(typeof result == 'string')
+})
+
+it('should have a bool field', async function ({ t, skjema, models }) {
+  var result = skjema.bool({}, models.all.fields.bool)
   t.ok(typeof result == 'string')
 })
 
