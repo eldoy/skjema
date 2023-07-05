@@ -9,8 +9,6 @@
   - you are responsible for setting up variables
   - actions should validate query params
 
-- [ ] Desc <small> to all labels and legends
-
 - [ ] References to other collections
   - select
   - radio
@@ -21,6 +19,7 @@
   - validations: is: 'array'
   - does d8a support: in for arrays (all values must be in) ?
 
+- [√] Desc <small> to all labels and legends
 - [√] textarea, select, radio, checkbox clearerrors
 - [√] don't use id for upload preview
 - [ ] postfix all ids with -field, use id="{id}" and same for errors
