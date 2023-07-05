@@ -19,6 +19,7 @@ fields:
   textarea:
     required: true
     type: textarea
+    desc: This is the shit
   file:
     required: true
     type: file
