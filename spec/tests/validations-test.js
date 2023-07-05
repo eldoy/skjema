@@ -45,7 +45,7 @@ it('should make validations for create', async function ({
   t.deepEqual(validations.select.in, ['spain', 'norway', 'germany'])
 })
 
-it('should make validations for create', async function ({
+it('should make validations for update', async function ({
   t,
   skjema,
   models
