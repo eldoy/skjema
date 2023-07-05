@@ -8,6 +8,7 @@
   - use tag?
   - global translations?
   - support for locales in schema?
+  - callback in all scripts?
 
 - [ ] Support for filters in actions (and flows?) for setup of data
 
