@@ -4,7 +4,12 @@
   "description": "Low code CMS System",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon -q -e '*' -i docs --exec spekk"
+    "test": "nodemon -q -e '*' -i docs --exec spekk",
+    "dev": "npm run clear:css && npm run build:css && concurrently -n 🔥,💗 \"npm run watch:app\" \"npm run watch:css\"",
+    "watch:app": "WAVEORB_PORT=5133 nodemon -e '*' -i dist -x waveorb serve",
+    "watch:css": "sass --watch app/assets/scss/app.scss app/assets/css/build/app.css",
+    "build:css": "sass app/assets/scss/app.scss app/assets/css/build/app.css",
+    "clear:css": "rm -rf app/assets/css/build"
   },
   "repository": {
     "type": "git",
@@ -14,10 +19,15 @@
   "license": "MIT",
   "dependencies": {
     "conficurse": "^0.3.9",
-    "haka": "^0.13.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "spekk": "^0.2.2"
+    "concurrently": "^8.2.0",
+    "dugg": "^0.3.0",
+    "haka": "^0.13.0",
+    "mongowave": "^0.5.0",
+    "sass": "^1.63.6",
+    "spekk": "^0.2.2",
+    "waveorb": "^0.37.16"
   }
 }
