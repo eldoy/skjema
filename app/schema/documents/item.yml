@@ -2,6 +2,8 @@ name: item
 desc: Using all of the fields
 filters:
   - hello
+actions:
+  - find
 fields:
   text:
     required: true
