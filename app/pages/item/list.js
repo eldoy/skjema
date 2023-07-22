@@ -20,5 +20,12 @@ module.exports = async function ($) {
         </ul>`
       }
       return /* HTML */ `<p>No items found</p>`
-    })()}`
+    })()}
+    <script>
+      async function loadItems() {
+        var items = await api('/item/find')
+        console.log(items)
+      }
+      loadItems()
+    </script>`
 }

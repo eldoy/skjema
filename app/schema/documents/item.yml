@@ -1,5 +1,7 @@
 name: item
 desc: Using all of the fields
+filters:
+  - hello
 fields:
   text:
     required: true
