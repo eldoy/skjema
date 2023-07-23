@@ -1,0 +1,6 @@
+name: tag
+desc: Item tags
+fields:
+  label:
+    required: true
+    type: radio

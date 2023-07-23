@@ -60,3 +60,7 @@ fields:
     required: true
     type: hidden
     value: something
+  reference:
+    required: true
+    type: radio
+    source: tag

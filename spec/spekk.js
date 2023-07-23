@@ -1,6 +1,7 @@
-const skjema = require('../index.js')
+var skjema = require('../index.js')
 
 module.exports = async function ({ data }) {
-  let models = skjema.model(data.schema)
-  return { skjema, models }
+  var models = skjema.model(data.schema)
+  var $ = { t: (key) => key }
+  return { skjema, models, $ }
 }
