@@ -62,5 +62,5 @@ fields:
     value: something
   reference:
     required: true
-    type: radio
+    type: select
     source: tag
