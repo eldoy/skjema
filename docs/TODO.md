@@ -1,3 +1,17 @@
+- [ ] Support data-onerror and data-onsuccess
+- [ ] Use data-message for custom message on success
+- [ ] Use data-redirect for custom message on success
+- [ ] Possible to merge handleDelete and handleSave?
+
+- [ ] Implement window.query as default object for query, and also this:
+  <form data-query="window.query">
+  <form data-query="id account_id project_id:2">
+
+- [ ] Implement clearErrors based on class
+- [ ] Implement showErrors based on class
+- [ ] Force form for showErrors?
+- [ ] How to implement support for both id and classes for backwards compatibility?
+
 - [ ] Postfix all ids with -field, use id="{id}" and same for errors
   - Generate random id to pass through?
     - this supports multiple forms with same ids (field names)
