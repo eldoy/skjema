@@ -1,6 +1,6 @@
 - [ ] Support data-onerror and data-onsuccess
 - [ ] Use data-message for custom message on success
-- [ ] Use data-redirect for custom message on success
+- [ ] Use data-redirect for custom redirect on success
 - [ ] Possible to merge handleDelete and handleSave?
 
 - [ ] Implement window.query as default object for query, and also this:
