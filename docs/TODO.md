@@ -1,6 +1,6 @@
 - [√] Need data-size on file input to pass to renderUpoadImage
 - [√] Implement scroll prop for form
-- [ ] Optional await for form.build
+- [x] Optional await for form.build
 
 - [√] Support data-onerror and data-onsuccess
 - [√] Use data-message for custom message on success
@@ -17,14 +17,7 @@
 
 - [x] Postfix all ids with -field, use id="{id}" and same for errors
 
-- [ ] How to pass model name to flash?
-  - want "Item deleted." instead of just "Deleted"
-  - model to field on load?
-  - use tag?
-  - global translations?
-  - support for locales in schema?
-  - callback in all scripts?
-
+- [√] How to pass model name to flash?
 - [√] Support for filters in actions (and flows?) for setup of data
 
 - [x] Support for belongs to
