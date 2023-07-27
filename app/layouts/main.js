@@ -31,7 +31,12 @@ module.exports = async function ($) {
         </footer>
         <script>
           flash()
+          window.handleClearErrors = ${$.app.scripts.handleClearErrors}
+          window.handleQueryParams = ${$.app.scripts.handleQueryParams}
+          window.handleRedirect = ${$.app.scripts.handleRedirect}
+          window.handleRequestPackage = ${$.app.scripts.handleRequestPackage}
           window.handleSave = ${$.app.scripts.handleSave}
+          window.handleShowErrors = ${$.app.scripts.handleShowErrors}
           window.handleUpload = ${$.app.scripts.handleUpload}
           window.handleUploadReset = ${$.app.scripts.handleUploadReset}
           window.handleUploadProgress = ${$.app.scripts.handleUploadProgress}

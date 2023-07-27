@@ -9,7 +9,8 @@
     "watch:app": "WAVEORB_PORT=5133 nodemon -e '*' -i dist -x waveorb serve",
     "watch:css": "sass --watch app/assets/scss/app.scss app/assets/css/build/app.css",
     "build:css": "sass app/assets/scss/app.scss app/assets/css/build/app.css",
-    "clear:css": "rm -rf app/assets/css/build"
+    "clear:css": "rm -rf app/assets/css/build",
+    "build": "rm -rf lib/scripts/*.js && cp app/scripts/*.js lib/scripts"
   },
   "repository": {
     "type": "git",
@@ -19,12 +20,12 @@
   "license": "MIT",
   "dependencies": {
     "conficurse": "^0.3.9",
+    "haka": "^0.13.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
     "concurrently": "^8.2.0",
     "dugg": "^0.3.0",
-    "haka": "^0.13.0",
     "mongowave": "^0.5.0",
     "sass": "^1.64.0",
     "spekk": "^0.2.2",

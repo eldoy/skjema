@@ -17,33 +17,6 @@ window.sleep = function (time, s = 0.5) {
   return new Promise((r) => setTimeout(r, s * 1000))
 }
 
-window.clearErrors = function (field) {
-  var el = q(`.${field.name}-errors`, field.parentNode)
-  if (!el) return
-  el.style.opacity = 0
-  setTimeout(function () {
-    text(el, '')
-    el.style.opacity = 1
-  }, 210)
-}
-
-window.showErrors = function (result, options = {}) {
-  if (!result.error) return
-  options = Object.assign({ class: 'error' }, options)
-  qa('form em', function (el) {
-    text(el, '')
-  })
-  flash(result.error.message, options)
-  for (var key in result) {
-    if (key !== 'error') {
-      for (var field in result[key]) {
-        text(`.${field}-errors`, result[key][field][0])
-      }
-    }
-  }
-  return true
-}
-
 window.track = function () {
   var t = store('track') || []
   var path = location.pathname + location.search

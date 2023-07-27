@@ -1,20 +1,21 @@
-- [ ] Support data-onerror and data-onsuccess
-- [ ] Use data-message for custom message on success
-- [ ] Use data-redirect for custom redirect on success
-- [ ] Possible to merge handleDelete and handleSave?
+- [ ] Need data-size on file input to pass to renderUpoadImage
+- [ ] Implement scroll prop for form
+- [ ] Optional await for form.build
 
-- [ ] Implement window.query as default object for query, and also this:
+- [√] Support data-onerror and data-onsuccess
+- [√] Use data-message for custom message on success
+- [√] Use data-redirect for custom redirect on success
+- [√] Possible to merge handleDelete and handleSave?
+
+- [√] Implement window.query as default object for query, and also this:
   <form data-query="window.query">
   <form data-query="id account_id project_id:2">
 
-- [ ] Implement clearErrors based on class
-- [ ] Implement showErrors based on class
-- [ ] Force form for showErrors?
-- [ ] How to implement support for both id and classes for backwards compatibility?
+- [√] Implement clearErrors based on class
+- [√] Implement showErrors based on class
+- [√] Force form for showErrors
 
-- [ ] Postfix all ids with -field, use id="{id}" and same for errors
-  - Generate random id to pass through?
-    - this supports multiple forms with same ids (field names)
+- [x] Postfix all ids with -field, use id="{id}" and same for errors
 
 - [ ] How to pass model name to flash?
   - want "Item deleted." instead of just "Deleted"
@@ -24,9 +25,9 @@
   - support for locales in schema?
   - callback in all scripts?
 
-- [ ] Support for filters in actions (and flows?) for setup of data
+- [√] Support for filters in actions (and flows?) for setup of data
 
-- [ ] Support for belongs to
+- [x] Support for belongs to
   - through query url
   - through params url
   - mix
@@ -35,10 +36,10 @@
   - you are responsible for setting up variables
   - actions should validate query params
 
-- [ ] References to other collections
-  - select
-  - radio
-  - checkboxes
+- [-] References to other collections
+  - [√] select
+  - [√] radio
+  - [ ] checkboxes
 
 - [ ] Support multiple select
   - multiple: true or type select-multiple (like haka)
