@@ -29,6 +29,8 @@ fields:
   file:
     required: true
     type: file
+    preview:
+      size: 100
   date:
     required: true
     type: date

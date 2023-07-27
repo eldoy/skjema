@@ -1,5 +1,5 @@
-- [ ] Need data-size on file input to pass to renderUpoadImage
-- [ ] Implement scroll prop for form
+- [√] Need data-size on file input to pass to renderUpoadImage
+- [√] Implement scroll prop for form
 - [ ] Optional await for form.build
 
 - [√] Support data-onerror and data-onsuccess

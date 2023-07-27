@@ -1,8 +1,9 @@
 module.exports = {
   handleClearErrors: require('./handleClearErrors.js'),
+  handleFormOptions: require('./handleFormOptions.js'),
   handleQueryParams: require('./handleQueryParams.js'),
   handleRedirect: require('./handleRedirect.js'),
-  handleRequestPackage: require('./handleRequestPackage.js'),
+  handlePayload: require('./handlePayload.js'),
   handleSave: require('./handleSave.js'),
   handleShowErrors: require('./handleShowErrors.js'),
   handleUpload: require('./handleUpload.js'),
