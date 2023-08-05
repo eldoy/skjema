@@ -1,0 +1,3 @@
+- [ ] Support multiple select
+  - multiple: true or type select-multiple (like haka)
+  - validations: is: 'array'
