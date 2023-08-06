@@ -1,1 +1,6 @@
 - [ ] Include pages in skjema
+- [ ] Default locales
+  - automatically merge into waveorb?
+- [ ] Default values for locales
+  - [ ] Depends on $.t('project') returns empty
+- [ ] Translations for fields, instead of field.name, use $.t('field.${field.name}`)
