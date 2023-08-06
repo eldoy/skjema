@@ -3,6 +3,7 @@ cancel: Cancel
 saved: Saved
 deleted: Deleted
 empty: List is empty
+show: Show
 new: New
 edit: Edit
 delete: Delete
@@ -11,3 +12,6 @@ delete_title: Delete
 back_to_list: Back to list
 item:
   name: Item
+  saved: Item saved
+  deleted: Item deleted
+  list_empty: No items found.

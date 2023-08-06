@@ -1,3 +1,3 @@
 module.exports = async function ($) {
-  return $.app.form.pages.new($)
+  return $.app.form.pages.new($, 'item')
 }
