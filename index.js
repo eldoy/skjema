@@ -5,6 +5,7 @@ module.exports = {
   tags: require('./lib/tags.js'),
   validations: require('./lib/validations.js'),
   actions: require('./lib/actions'),
+  pages: require('./lib/pages'),
   scripts: require('./lib/scripts'),
   ...require('./lib/elements')
 }
