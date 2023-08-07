@@ -10,9 +10,15 @@ edit: Edit
 delete: Delete
 really_delete: Really delete
 delete_title: Delete
-back_to_list: Back to list
 item:
   name: Item
   saved: Item saved
   deleted: Item deleted
   list_empty: No items found.
+  back_to_list: Back to item list
+project:
+  name: Project
+  saved: Project saved
+  deleted: Project deleted
+  list_empty: No projects found.
+  back_to_list: Back to project list
