@@ -27,8 +27,8 @@
     "concurrently": "^8.2.0",
     "dugg": "^0.3.0",
     "mongowave": "^0.5.0",
-    "sass": "^1.64.0",
+    "sass": "^1.64.2",
     "spekk": "^0.2.2",
-    "waveorb": "^0.37.17"
+    "waveorb": "^0.37.19"
   }
 }
