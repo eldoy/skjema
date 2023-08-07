@@ -1,0 +1,17 @@
+[
+  "eq",
+  "ne",
+  "gt",
+  "lt",
+  "gte",
+  "lte",
+  "in",
+  "nin",
+  "length",
+  "min",
+  "max",
+  "match",
+  "is",
+  "isnt",
+  "skip"
+]
