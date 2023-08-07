@@ -1,0 +1,5 @@
+name: project
+fields:
+  name:
+    type: text
+    required: true
