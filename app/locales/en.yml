@@ -2,7 +2,8 @@ save: Save
 cancel: Cancel
 saved: Saved
 deleted: Deleted
-empty: List is empty
+list: List
+empty: No data found.
 show: Show
 new: New
 edit: Edit
