@@ -48,14 +48,14 @@ email:
   type: email
 ```
 
-Then in your documents you can use them like this:
+In your documents you can use them like this:
 
 ```
 name: project
 fields: $user
 ```
 
-which will give you a document model that looks like this:
+That will give you a document model that looks like this:
 
 ```yml
 name: project
@@ -151,7 +151,7 @@ fields:
     type: string
 ```
 
-Any of these actions that you override will take presedence, so if you define an action in `app/actions/project/create.js`, then it will replace the default create action.
+Any of these actions that you override will take presedence, so if you define an action in `app/actions/project/create.js`, it will replace the default create action.
 
 ### Custom page with form builder
 
@@ -180,7 +180,7 @@ module.exports = async function($) {
 
 ### Custom form with the fields function
 
-If you need to create the form element manually, you can just use the `fields` function:
+If you need to create the form element manually, you can just use the `fields` function to achieve the same thing:
 
 ```js
 module.exports = async function($) {
