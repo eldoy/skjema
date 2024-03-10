@@ -153,6 +153,21 @@ fields:
 
 Any of these actions that you override will take presedence, so if you define an action in `app/actions/project/create.js`, it will replace the default create action.
 
+To disable automatic generation of actions, you can add this to your document definition:
+
+```yml
+actions: []
+```
+
+or this if you want to only generate certain actions:
+
+```yml
+actions:
+  - find
+  - get
+  - list
+```
+
 ### Custom page with form builder
 
 The default pages are great for prototyping or very simple apps, but there might be times when you need to create your own pages. You can build your forms manually using the `app.form.build` function:
@@ -185,7 +200,7 @@ If you need to create the form element manually, you can just use the `fields` f
 ```js
 module.exports = async function($) {
   return `<h1>New Project</h1>
-    <form onsubmit="return false">
+    <form action="/project/create" onsubmit="return false">
       ${await $.app.form.fields($, 'project')}
     </form>`
 }
@@ -197,7 +212,7 @@ module.exports = async function($) {
   var project = db('project').get({ id })
 
   return `<h1>Edit Project</h1>
-    <form onsubmit="return false">
+    <form action="/project/update" onsubmit="return false">
       ${await $.app.form.fields($, 'project', project)}
     </fields>`
   `
@@ -212,7 +227,7 @@ Following the principle of "progressive enhancement", and for even more control,
 module.exports = async function($) {
   var model = $.app.schema.models.project
   return `<h1>New Project</h1>
-    <form onsubmit="return false">
+    <form action="/project/create" onsubmit="return false">
       ${$.app.form.checkbox($, model.fields.checkbox)}
     </form>`
 }
@@ -223,7 +238,7 @@ These functions lets you override the schema files, or even let you create form 
 ```js
 module.exports = async function($) {
   return `<h1>New Project</h1>
-    <form onsubmit="return false">
+    <form action="/project/create" onsubmit="return false">
       ${$.app.form.text($, { name: 'email' }}
     </form>`
 }
@@ -234,27 +249,118 @@ To set a value, just pass the value:
 ```js
 module.exports = async function($) {
   return `<h1>New Project</h1>
-    <form onsubmit="return false">
+    <form action="/project/create" onsubmit="return false">
       ${$.app.form.email($, { name: 'email', value: 'test@example.com' }}
     </form>`
 }
 ```
 
-The field elements functions that exist are:
+These are the available field element functions:
 
-- `bool`: Create a toggler for true or false values
-- `checkbox`: Creates checkboxes
-- `color`: Color input
-- `date`: Date chooser
-- `email`: Input with type "email"
-- `file`: File upload field
-- `hidden`: Hidden input
-- `number`: Number input
-- `password`: Password input
-- `radio`: Radio buttons
-- `select`: Select fields
-- `text`: Text input, the default
-- `textarea`: Create a text area
+```js
+// Create checkbox
+app.form.checkbox($, {
+  name: 'food',
+  options: [ 'juice', 'meat', 'milk' ]
+})
 
+// Create file upload field
+app.form.file($, {
+  name: 'image',
+  action: '/upload/create',
+  size: 100
+})
+
+// Create radio buttons
+app.form.radio($, {
+  name: 'nature',
+  options: [ 'sun', 'moon', 'sea' ]
+})
+
+// Select box
+app.form.select($, {
+  name: 'country',
+  options: [ 'spain', 'norway', 'germany' ]
+})
+
+// Text input field
+app.form.text($, {
+  name: 'status'
+})
+
+// Number input field
+app.form.number($, {
+  name: 'age'
+})
+
+// Radio button toggle
+app.form.bool($, {
+  name: 'accept'
+})
+
+// Hidden field
+app.form.hidden($, {
+  name: 'id'
+})
+
+// Textarea
+app.form.textarea($, {
+  name: 'description'
+})
+
+// Password field
+app.form.password($, {
+  name: 'pass'
+})
+
+// Email field
+app.form.email($, {
+  name: 'email'
+})
+
+// Date field
+app.form.date($, {
+  name: 'birthdate'
+})
+
+// Color field
+app.form.color($, {
+  name: 'color'
+})
+
+// Submit button
+app.form.submit($)
+```
+
+They are used like this on a page:
+
+```js
+// Create new document
+module.exports = async function($) {
+  return `<h1>User form</h1>
+    <form action="/user/create" onsubmit="return false">
+      ${$.app.form.text($, { name: 'name' })}
+      ${$.app.form.email($, { name: 'email' })}
+      ${$.app.form.submit($)}
+    </form>
+  `
+}
+
+// Update document, using value
+module.exports = async function($) {
+  var { id } = $.req.query.id
+  var user = db('user').get({ id })
+
+  return `<h1>User form</h1>
+    <form action="/user/update" onsubmit="return false">
+      ${$.app.form.text($, { name: 'name', value: user.name })}
+      ${$.app.form.email($, { name: 'email', value: user.email })}
+      ${$.app.form.submit($)}
+    </form>
+  `
+}
+```
+
+### License
 
 MIT Licensed. Enjoy!
