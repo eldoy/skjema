@@ -1,4 +1,4 @@
-module.exports = async function handleSave(btn, opt = {}) {
+module.exports = async function handleSubmit(btn, opt = {}) {
   btn.disabled = true
   var form = btn.form
   opt = window.handleFormOptions(form, opt)

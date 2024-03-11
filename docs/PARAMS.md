@@ -1,6 +1,6 @@
 There is a need to pass params to the queries that communicate with the API.
 
-Usually it is an 'id', but is can also be 'email' or 'account_id'. There must be a way to pick those up automatically from the handleSave function.
+Usually it is an 'id', but is can also be 'email' or 'account_id'. There must be a way to pick those up automatically from the handleSubmit function.
 
 At the moment we do this to pick up the 'id':
 
