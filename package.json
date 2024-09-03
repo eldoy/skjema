@@ -19,16 +19,16 @@
   "author": "Vidar Eldøy <vidar@eldoy.com>",
   "license": "MIT",
   "dependencies": {
-    "conficurse": "^0.3.9",
+    "conficurse": "^0.5.10",
     "haka": "^0.13.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "concurrently": "^8.2.0",
-    "dugg": "^0.3.0",
-    "mongowave": "^0.5.0",
-    "sass": "^1.64.2",
+    "concurrently": "^8.2.2",
+    "dugg": "^0.5.0",
+    "mongowave": "^0.15.0",
+    "sass": "^1.77.8",
     "spekk": "^0.2.2",
-    "waveorb": "^0.37.19"
+    "waveorb": "^0.45.1"
   }
 }
